@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>contact</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <nav>
-      <div class="nav-header">
-        <a href="index.html"><img src="images/tv-tower-lightpink2.png" alt=""></a>
+
+<head>
+  <meta charset="utf-8">
+  <title>contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <nav>
+        <div class="nav-header">
+          <a href="index.html"><img src="images/tv-tower-lightpink2.png" alt=""></a>
           <button class="toggle">
-          <img class="toggle-icon" src="images/toggle.png" alt="">
-        </button>
+            <img class="toggle-icon" src="images/toggle.png" alt="">
+          </button>
+        </div>
+        <ul class="links">
+          <li><a href="about-me.html">About Me</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <h2>Get in contact!</h2>
+        <p>Just fill out the form below and I'll get back to you soon.</p>
+
+        <form class="" action="index.html" method="post">
+          <input class="form" type="text" name="" value="" placeholder="Name">
+          <input class="form" type="email" name="" value="" placeholder="Email">
+          <input class="form" type="tel" name="" value="" placeholder="Phone (optional)">
+          <select class="form" name="level-of-english">
+            <option class="dim" value="">Your level of English</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Low Intermediate">Low Intermediate</option>
+            <option value="High Intermediate">High Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+          <textarea class="form" name="message" rows="8" cols="80" placeholder="Message"></textarea>
+          <button class="form-btn" type="submit" name="button">Submit</button>
+        </form>
+
       </div>
-      <ul class="links">
-        <li><a href="about-me.html">About Me</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    </div>
+    <div class="footer">
 
-    <h2>Get in contact!</h2>
-    <p>Just fill out the form below and I'll get back to you soon.</p>
-    <form class="" action="index.html" method="post">
-      <label for="Name">Name</label>
-      <input type="text" name="" value="">
+    </div>
+  </div>
+</body>
 
-      <label for="email">email</label>
-      <input type="email" name="" value="">
-
-      <label for="Name">level of english</label>
-      <!-- drop down - beg, in, adv -->
-      <input type="text" name="" value="">
-
-      <button type="submit" name="button">Submit</button>
-
-    </form>
-  </body>
 </html>

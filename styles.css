@@ -42,7 +42,17 @@ a{
   text-decoration: none;
   color: inherit;
 }
+.container{
+  margin:100px 15%;
+}
+#page-container{
+position: relative;
+min-height:100vh;
+}
 
+#content-wrap{
+  padding-bottom:30px;
+}
 /* Navbar */
 .nav-header {
   display: flex;
@@ -128,8 +138,44 @@ padding: 60px 0 120px;
   color: #464655;
 }
 
+
+/* contact */
+form{
+  display: flex;
+  flex-direction: column;
+  width:400px;
+  margin: 20px auto;
+}
+.form{
+  margin: 5px 0;
+  background-color: inherit;
+  padding: 5px;
+  border: solid 1px #464655;
+  border-radius: 3px;
+}
+.form-btn{
+  width:50%;
+  margin: 30px auto;
+  background-color: #464655;
+  color: #f3dad8;
+  padding: 10px;
+  border: solid 1px #464655;
+  border-radius: 3px;
+}
+select{
+  color:grey;
+}
+.dim{
+  color:grey;
+}
+option{
+  color:black;
+}
 /* Footer */
 .footer {
-  height: 69px;
+  position:absolute;
+  bottom:0;
+  height: 30px;
+  width:100%;
   background-color: #464655;
 }

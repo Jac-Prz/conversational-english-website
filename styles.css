@@ -1,0 +1,135 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@500&family=Comfortaa:wght@500&family=Exo+2&family=Josefin+Sans&family=M+PLUS+Rounded+1c&family=Noto+Serif&family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+
+/* Elements */
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #f3dad8;
+  font-family: 'Comfortaa', cursive;
+}
+
+nav {
+  background-color: #464655;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f3dad8;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Bebas Neue', cursive;
+  color: #464655;
+  letter-spacing: 0.5rem
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  color: #464655;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #464655;
+  letter-spacing: .1rem;
+  line-height: 2;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-header img {
+  height: 60px;
+  padding: 5px 40px 0;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle-icon {
+  height: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links li {
+  display: flex;
+  margin: auto 20%;
+  }
+
+/* First Container */
+.first-container {
+  background-image: url("images/landscape111.png");
+  background-size: cover;
+  background-position: center;
+}
+.title {
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text{
+  text-align: right;
+}
+.conversational{
+  margin:0;
+}
+.english{
+  font-size: 6.4rem;
+  letter-spacing: 1rem;
+  margin:0;
+}
+.text h2{
+  margin: 0;
+  letter-spacing: .2rem;
+}
+/* Second container */
+.page-desc {
+  padding: 60px 20%;
+  margin: 0;
+}
+
+/* Third container */
+.third-container {
+padding: 60px 0 120px;
+}
+.third-container table{
+  width:80%;
+  margin: auto;
+}
+.third-container td{
+  width:20%;
+  vertical-align: top;
+}
+.third-container i {
+  font-size: 4rem;
+  color: #464655;
+}
+
+/* Footer */
+.footer {
+  height: 69px;
+  background-color: #464655;
+}

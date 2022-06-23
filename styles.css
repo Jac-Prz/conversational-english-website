@@ -77,15 +77,9 @@ min-height:100vh;
   height: 20px;
 }
 
-.links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .links li {
-  display: flex;
-  margin: auto 20%;
+  display: inline-block;
+  padding: 0 40px;
   }
 
 /* First Container */
@@ -123,16 +117,12 @@ min-height:100vh;
 
 /* Third container */
 .third-container {
-padding: 60px 0 120px;
+padding: 60px 20% 120px;
+display: grid;
+grid-template-columns: 20% 20% 20% 20%;
+grid-gap: 6.666%
 }
-.third-container table{
-  width:80%;
-  margin: auto;
-}
-.third-container td{
-  width:20%;
-  vertical-align: top;
-}
+
 .third-container i {
   font-size: 4rem;
   color: #464655;

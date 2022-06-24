@@ -3,31 +3,39 @@
 
 <head>
   <meta charset="utf-8">
-  <title>contact</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script src="https://kit.fontawesome.com/4f20a02fa5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Conversational English</title>
 </head>
-
 <body>
   <div id="page-container">
     <div id="content-wrap">
-      <nav>
-        <div class="nav-header">
-          <a href="index.html"><img src="images/tv-tower-lightpink2.png" alt=""></a>
-          <button class="toggle">
-            <img class="toggle-icon" src="images/toggle.png" alt="">
-          </button>
-        </div>
-        <ul class="links">
-          <li><a href="about-me.html">About Me</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
+<!-- navbar -->
+  <nav class="nav">
+    <div class="nav-header">
+      <a href="index.html"><img src="images/logo.png" alt=""></a>
+    </div>
+    <a href="#" class="toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="nav-links">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a class="active-link" href="contact.html">Contact</a></li>
+    </ul>
+    </div>
+    </nav>
+<!-- get in contact -->
       <div class="container">
-        <h2>Get in contact!</h2>
+        <h2 class="page-header">Get in contact!</h2>
         <p>Just fill out the form below and I'll get back to you soon.</p>
-
+<!-- contact form -->
         <form class="" action="index.html" method="post">
           <input class="form" type="text" name="" value="" placeholder="Name">
           <input class="form" type="email" name="" value="" placeholder="Email">
@@ -42,12 +50,9 @@
           <textarea class="form" name="message" rows="8" cols="80" placeholder="Message"></textarea>
           <button class="form-btn" type="submit" name="button">Submit</button>
         </form>
-
       </div>
     </div>
-    <div class="footer">
-
-    </div>
+    <footer></footer>
   </div>
 </body>
 

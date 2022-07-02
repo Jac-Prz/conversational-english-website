@@ -6,7 +6,6 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <script src="https://kit.fontawesome.com/4f20a02fa5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
   <title>Conversational English</title>
 </head>
 <body>
@@ -34,26 +33,42 @@
 <!-- get in contact -->
       <div class="container">
         <h2 class="page-header">Get in contact!</h2>
-        <p>Just fill out the form below and I'll get back to you soon.</p>
+        <div>
+          <button id="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp-square whatsapp-icon"></i>
+            <div class="copy-div">
+              <p  class="pink" id="copy" >copy number</p>
+            </div>
+          </button>
+          <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram-square contact-icon"></i></a>
+         <a href="https://www.faceboom.com"> <i class="fa-brands fa-facebook-square contact-icon"></i></a>
+        </div>
+        <p>Or fill out the form below and I'll get back to you soon.</p>
 <!-- contact form -->
-        <form class="" action="index.html" method="post">
-          <input class="form" type="text" name="" value="" placeholder="Name">
-          <input class="form" type="email" name="" value="" placeholder="Email">
-          <input class="form" type="tel" name="" value="" placeholder="Phone (optional)">
-          <select class="form" name="level-of-english">
+        <form id="contact-form" class="show" onsubmit="return false">
+          <input class="form" type="text" name="contact-name" placeholder="Name" required>
+          <input class="form" type="email" name="contact-email" placeholder="Email" required>
+          <input class="form" type="tel" name="contact-tel" placeholder="Phone (optional)">
+          <select class="form" name="english-level" required>
             <option class="dim" value="">Your level of English</option>
             <option value="Beginner">Beginner</option>
             <option value="Low Intermediate">Low Intermediate</option>
             <option value="High Intermediate">High Intermediate</option>
             <option value="Advanced">Advanced</option>
           </select>
-          <textarea class="form" name="message" rows="8" cols="80" placeholder="Message"></textarea>
-          <button class="form-btn" type="submit" name="button">Submit</button>
-        </form>
+          <textarea class="form" name="contact-message" rows="8" cols="80" placeholder="Message" required></textarea>
+          <button id="contactBtn"class="form-btn" type="submit" name="button">Submit</button>
+          </form>
+        <div id="contact-result-div" class="hide">
+          <i class="fa-solid"></i>
+          <p id="contact-form-result"></p>
+        </div>
       </div>
     </div>
     <footer></footer>
   </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+ <script type="text/javascript" src="script.js"> </script>
 </body>
 
 </html>

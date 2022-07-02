@@ -15,17 +15,15 @@ body {
   background-color: #f3dad8;
 }
 
-h1, h2{
+h1{
+  margin: 0;
   font-family: 'Bebas Neue', cursive;
-}
-
-h1 {
-  font-size: 3rem;
-  letter-spacing: 0.5rem
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
 }
 p {
   font-size: 1rem;
@@ -145,15 +143,14 @@ font-weight: bold;
   text-align: right;
 }
 .conversational{
-  margin:0;
+  letter-spacing: .4rem;
 }
 .english{
-  font-size: 6.4rem;
+  font-size: 7.7rem;
   letter-spacing: 1rem;
-  margin:0;
-}
-.text h2{
-  margin: 0;
+  }
+.in-prague{
+  font-size: 3rem;
   letter-spacing: .2rem;
 }
 @media(max-width:980px) {
@@ -171,7 +168,7 @@ font-weight: bold;
   .english{
     font-size: 4.6rem;
   }
-  .text h2{
+  .in-prague{
   font-size:1.8rem;
   }
 }
@@ -219,12 +216,57 @@ h2.page-header{
   }
 }
 /* contact page*/
-form{
-  display: flex;
+#whatsapp-btn{
+  background-color: transparent;
+  border: none;
+  font-size: inherit;
+  padding:0;
+}
+.contact-icon{
+  font-size: 3rem;
+  padding: 0 .5rem;
+  margin-bottom: 26.5px;
+}
+.whatsapp-icon{
+  font-size: 3rem;
+  padding: 0 .5rem;
+  }
+#copy{
+  margin:0;
+  font-size: .5rem;
+  }
+.pink{
+  color:#f3dad8;
+}
+.grey{
+  color: #464655B0;
+}
+.copy-div{
+  text-align: center;
+  width:58px;
+  height:26.5px;
+  padding: 0 .5rem;
+}
+#contact-form{
   flex-direction: column;
   width:400px;
   margin: 20px auto;
 }
+#contact-result-div{
+  background-color: #464655;
+  border-radius: 3px;
+  flex-direction: column;
+  width:400px;
+  margin: 60px auto;
+  }
+#contact-form-result, #contact-result-div i{
+  color: #f3dad8;
+}
+#contact-result-div i{
+  font-size: 2rem;
+  padding-top:16px;
+}
+
 .form{
   margin: 5px 0;
   background-color: inherit;
@@ -241,6 +283,9 @@ form{
   border: solid 1px #464655;
   border-radius: 3px;
 }
+.form-btn:hover {
+  background-color: #464655C0;
+}
 select{
   color:grey;
 }
@@ -251,9 +296,15 @@ option{
   color:black;
 }
 @media(max-width:500px){
-  form{
+  #contact-form, #contact-result-div{
     width:300px;
   }
+  }
+.hide{
+  display:none;
+}
+.show{
+  display: flex;
 }
 /* Footer */
 footer {
